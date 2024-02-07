@@ -47,7 +47,7 @@ En hel förfrågan kan se ut såhär:
 https://api.flickr.com/services/rest?method=flickr.photos.search&api_key=abc12378asdashdjsah8sds&text=banana&per_page=20&sort=date-taken-asc&format=json&nojsoncallback=1
 ```
 
-Detta kan skriva på till exempel detta vis i er JS-kod:
+Och såhär kan det se ut i er JS-kod:
 
 ```
   let url = `${baseUrl}?api_key=${apiKey}&method=${method}&text=${text}&page=${currentPage}&format=json&nojsoncallback=1`;
