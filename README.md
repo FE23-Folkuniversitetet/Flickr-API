@@ -80,6 +80,7 @@ let url = `https://farm${img.farm}.staticflickr.com/${img.server}/${img.id}_${im
 ### Godkänt
 En webbapp byggd på Flickrs API där ni:
 - använt HTML, CSS ( inkl flexbox ) och vanilla JS
+- använt Git och GitHub för versionshantering enligt *git workflow*
 - kan söka efter bilder med hjälp av textsök
 - visar sökresultatet på ett snyggt sätt i ett galleri
 - kan presentera klickad bild i större storlek ( ex. [lightbox effekt](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) )
