@@ -1,12 +1,10 @@
 ![poster](poster.png)
 
 # Introduktion
-Att förstå hur man på klientsidan jobbar mot API:er är en väsentlig kunskap för backendutvecklare, då det är i API:et mycket utav mötet mellan back- och frontend sker.
-
-REST-api:er är det vanligaste protokollet för klienten att förses med extern data. Bemästrar man den tekniken, finns det ingen hejd på coola tjänster man kan bygga!
+Att förstå hur man på klientsidan jobbar mot API:er är en väsentlig kunskap för frontendutvecklare! REST-api:er är det vanligaste protokollet för klienten att förses med extern data. Bemästrar man den tekniken finns det ingen hejd på coola tjänster man kan bygga :smiley:
 
 ## Detta ska du göra
-Du ska med hjälp av Flickrs API utveckla en klientapp med *html*, *css* och *vanilla JS* där du kan ```söka fram``` och ```snyggt visa``` bilder.
+Du ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vanilla JS* där du kan ```söka fram``` och ```snyggt visa``` bilder.
 
 
 ## Om Flickrs API
@@ -15,7 +13,7 @@ Du ska med hjälp av Flickrs API utveckla en klientapp med *html*, *css* och *va
 För att få tillgång till flickers servrar behöver du en API-nyckel. Den är gratis, men kräver att du registrerat ett flickr-konto. Du skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
 
 ### Metoder och argument
-Flickrs API är gigantiskt och innehåller många *resurser*. Vi kommer endast utforska och använda metoden ```flickr.photos.search``` i detta projekt.
+Flickrs API är gigantiskt och innehåller många *resurser*. Ni kommer endast använda metoden ```flickr.photos.search``` i denna examination.
 
 Flickr API utgår ifrån denna basurl: 
 ```https://api.flickr.com/services/rest```
@@ -68,15 +66,13 @@ https://farm1.staticflickr.com/2/1418878_1e92283336_m.jpg
 
 ## Bedömning
 ### Godkänt
-En webbapp byggt på Flickrs API där du:
-- användt HTML, CSS ( inkl flexbox ) och vanilla JS
+En webbapp byggd på Flickrs API där ni:
+- använt HTML, CSS ( inkl flexbox ) och vanilla JS
 - kan söka efter bilder med hjälp av textsök
-- visa sökresultatet ett snyggt sätt i galleri-form
+- visa sökresultatet på ett snyggt sätt i galleri-form
 - kan presentera klickad bild i större storlek ( ex. [lightbox effekt](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) )
 
-### Väl godkänt
-För VG ska du nå samtliga G-krav samt:
-- mer funktiolitet utifrån metodens [argument](https://www.flickr.com/services/api/flickr.photos.search.html), ex. *licenstyp*, *antal bilder du får tillbaka*, *tags* eller dyl. 
+### Level-up
 - pagnation-funktionalitet där du kan bläddra mellan olika sidor av sökresultaten
 - felhantering där felkoden meddelas användaren
 
