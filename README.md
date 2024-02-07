@@ -10,10 +10,10 @@ Ni ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vani
 ## Om Flickrs API
 
 ### API nyckel
-För att få tillgång till Flickers servrar behövs en API-nyckel. Den är gratis, men kräver att ni registrerat ett flickr-konto. Ni skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
+För att få tillgång till Flickrs servrar behövs en API-nyckel. Den är gratis, men kräver att ni registrerat ett flickr-konto. Ni skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
 
 ### Metoder och argument
-Flickrs API är gigantiskt och innehåller många *resurser*. Ni kommer endast använda metoden ```flickr.photos.search``` i denna examination.
+Flickr API är gigantiskt och innehåller många *resurser*. Ni kommer endast använda metoden ```flickr.photos.search``` i denna examination.
 
 Flickr API utgår ifrån denna basURL: 
 ```https://api.flickr.com/services/rest```
