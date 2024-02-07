@@ -1,24 +1,24 @@
 ![poster](poster.png)
 
 # Introduktion
-Att förstå hur man jobbar mot API:er är en väsentlig kunskap för frontendutvecklare! REST-api:er är det vanligaste protokollet för klienten att förses med extern data. Bemästrar man den tekniken finns det ingen hejd på coola tjänster som kan byggas :smiley:
+Att förstå hur man jobbar mot API:er är en väsentlig kunskap för frontendutvecklare! Bemästrar man den tekniken finns det ingen hejd på coola tjänster som kan byggas :smiley:
 
 ## Detta ska ni göra
-Ni ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vanilla JS* där ni kan ```söka fram``` och ```snyggt visa``` bilder.
+Ni ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vanilla JS* där ni kan ```söka fram``` och ```på ett snyggt sätt``` presentera bilder.
 
 
 ## Om Flickrs API
 
 ### API nyckel
-För att få tillgång till flickers servrar behövs en API-nyckel. Den är gratis, men kräver att ni registrerat ett flickr-konto. Ni skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
+För att få tillgång till Flickers servrar behövs en API-nyckel. Den är gratis, men kräver att ni registrerat ett flickr-konto. Ni skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
 
 ### Metoder och argument
 Flickrs API är gigantiskt och innehåller många *resurser*. Ni kommer endast använda metoden ```flickr.photos.search``` i denna examination.
 
-Flickr API utgår ifrån denna basurl: 
+Flickr API utgår ifrån denna basURL: 
 ```https://api.flickr.com/services/rest```
 
-Således blir hela *basurl* ( sen tillkommer params ):
+Således blir hela *basURL:en* ( sen tillkommer params ):
 
 ```
 https://api.flickr.com/services/rest?method=flickr.photos.search
@@ -47,6 +47,12 @@ En hel förfrågan kan se ut såhär:
 https://api.flickr.com/services/rest?method=flickr.photos.search&api_key=abc12378asdashdjsah8sds&text=banana&per_page=20&sort=date-taken-asc&format=json&nojsoncallback=1
 ```
 
+Detta kan skriva på till exempel detta vis i er JS-kod:
+
+```
+  let url = `${baseUrl}?api_key=${apiKey}&method=${method}&text=${text}&page=${currentPage}&format=json&nojsoncallback=1`;
+```
+
 ### Flickrs bild URL:er
 JSON kan inte innehålla bilder, så den datan ni får tillbaka använder några olika parametrar för att *bygga ihop* en url till bilden. Detta beskrivs väldigt tydligt [i dokumentationen](https://www.flickr.com/services/api/misc.urls.html).
 
@@ -62,6 +68,12 @@ En hel bildadress ser ut så här:
 
 ```
 https://farm1.staticflickr.com/2/1418878_1e92283336_m.jpg
+```
+
+Och det kan se ut såhär i er JS-kod: 
+
+```
+let url = `https://farm${img.farm}.staticflickr.com/${img.server}/${img.id}_${img.secret}_${imgSize}.jpg`;
 ```
 
 ## Bedömning
