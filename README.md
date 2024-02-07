@@ -1,16 +1,16 @@
 ![poster](poster.png)
 
 # Introduktion
-Att förstå hur man på klientsidan jobbar mot API:er är en väsentlig kunskap för frontendutvecklare! REST-api:er är det vanligaste protokollet för klienten att förses med extern data. Bemästrar man den tekniken finns det ingen hejd på coola tjänster man kan bygga :smiley:
+Att förstå hur man jobbar mot API:er är en väsentlig kunskap för frontendutvecklare! REST-api:er är det vanligaste protokollet för klienten att förses med extern data. Bemästrar man den tekniken finns det ingen hejd på coola tjänster som kan byggas :smiley:
 
-## Detta ska du göra
-Du ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vanilla JS* där du kan ```söka fram``` och ```snyggt visa``` bilder.
+## Detta ska ni göra
+Ni ska med hjälp av Flickrs API utveckla en webbapp med *html*, *css* och *vanilla JS* där ni kan ```söka fram``` och ```snyggt visa``` bilder.
 
 
 ## Om Flickrs API
 
 ### API nyckel
-För att få tillgång till flickers servrar behöver du en API-nyckel. Den är gratis, men kräver att du registrerat ett flickr-konto. Du skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
+För att få tillgång till flickers servrar behövs en API-nyckel. Den är gratis, men kräver att ni registrerat ett flickr-konto. Ni skaffar en API-nyckel [här](https://www.flickr.com/services/api/misc.api_keys.html).
 
 ### Metoder och argument
 Flickrs API är gigantiskt och innehåller många *resurser*. Ni kommer endast använda metoden ```flickr.photos.search``` i denna examination.
@@ -36,10 +36,10 @@ Flickrs metod **flickr.photos.search** har [många valbara argument](https://www
 
 Det finns ingen standarisering vilka argument som finns vid en API-resurs utan detta är något man måste [läsa sig till i dokumentationen](https://www.flickr.com/services/api/flickr.photos.search.html).
 
-Ett argument som *bör* vara med är ```format=json```då Flickrs API stödjer ett gäng fler andra format. Detta gör att du får tillbaka JSON som en callback. Detta blir lite meckigt att jobba med, så lägg även på argumentet ```&nojsoncallback=1```. 
+Ett argument som *bör* vara med är ```format=json```då Flickrs API stödjer ett gäng fler andra format. Detta gör att ni får tillbaka JSON som en callback. Detta blir lite meckigt att jobba med, så lägg även på argumentet ```&nojsoncallback=1```. 
 
 
-En adress kan innehålla en eller flera argument och kan bli väldigt lång!
+En adress kan innehålla ett eller flera argument och kan bli väldigt lång!
 
 En hel förfrågan kan se ut såhär:
 
@@ -48,7 +48,7 @@ https://api.flickr.com/services/rest?method=flickr.photos.search&api_key=abc1237
 ```
 
 ### Flickrs bild URL:er
-JSON kan inte innehålla bilder, så den datan du får tillbaka använder några olika parametrar för att *bygga ihop* en url till bilden. Detta beskrivs väldigt tydligt [i dokumentationen](https://www.flickr.com/services/api/misc.urls.html).
+JSON kan inte innehålla bilder, så den datan ni får tillbaka använder några olika parametrar för att *bygga ihop* en url till bilden. Detta beskrivs väldigt tydligt [i dokumentationen](https://www.flickr.com/services/api/misc.urls.html).
 
 Bildadresser byggs ihop enligt följande:
 
@@ -69,10 +69,10 @@ https://farm1.staticflickr.com/2/1418878_1e92283336_m.jpg
 En webbapp byggd på Flickrs API där ni:
 - använt HTML, CSS ( inkl flexbox ) och vanilla JS
 - kan söka efter bilder med hjälp av textsök
-- visa sökresultatet på ett snyggt sätt i galleri-form
+- visar sökresultatet på ett snyggt sätt i ett galleri
 - kan presentera klickad bild i större storlek ( ex. [lightbox effekt](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) )
 
 ### Level-up
-- pagnation-funktionalitet där du kan bläddra mellan olika sidor av sökresultaten
+- pagnation-funktionalitet där det går att bläddra mellan olika sidor av sökresultaten
 - felhantering där felkoden meddelas användaren
 
