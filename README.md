@@ -85,6 +85,6 @@ En webbapp byggd på Flickrs API där ni:
 - kan presentera klickad bild i större storlek ( ex. [lightbox effekt](https://en.wikipedia.org/wiki/Lightbox_(JavaScript)) )
 
 ### Level-up
-- pagnation-funktionalitet där det går att bläddra mellan olika sidor av sökresultaten
+- pagination-funktionalitet där det går att bläddra mellan olika sidor av sökresultaten
 - felhantering där felkoden meddelas användaren
 
