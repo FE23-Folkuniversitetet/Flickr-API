@@ -77,6 +77,14 @@ let url = `https://farm${img.farm}.staticflickr.com/${img.server}/${img.id}_${im
 ```
 
 ## Bedömning
+
+### Redovisning inför helklass 15/2
+Ni ska redovisa arbetet (runt 5-6 minuter per grupp) där ni berättar om: 
+- hur arbetet har fördelats
+- hur ni har arbetat med Git, GitHub, Trello (och eventuella andra verktyg)
+- visar upp er webbapp
+- Dela gärna med er av svårigheter och hur ni löst problem som har uppstått under arbetets gång
+  
 ### Godkänt
 En webbapp byggd på Flickrs API där ni:
 - använt HTML, CSS ( inkl flexbox ) och vanilla JS
